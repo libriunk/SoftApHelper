@@ -20,6 +20,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: gradle
+      - name: Find and chmod gradlew
+        run: find . -name "gradlew" -type f -exec chmod +x {} \;
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
