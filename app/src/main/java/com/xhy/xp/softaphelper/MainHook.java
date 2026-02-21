@@ -41,7 +41,7 @@ public class MainHook implements IXposedHookLoadPackage {
 
     private static final String callerMethodName_Q = "configureIPv4";
 
-    private static final String WIFI_HOST_IFACE_ADDR = "192.168.43.1";
+    private static final String WIFI_HOST_IFACE_ADDR = "192.168.4.1";
 
     // TetheringType
     public static final int TETHERING_INVALID = -1;
@@ -54,10 +54,10 @@ public class MainHook implements IXposedHookLoadPackage {
     public static final int TETHERING_WIGIG = 6;
 
     private static final String WIFI_HOST_IFACE_ADDRESS = WIFI_HOST_IFACE_ADDR + "/24";
-    private static final String USB_HOST_IFACE_ADDRESS = "192.168.42.1/24";
-    private static final String BT_HOST_IFACE_ADDRESS = "192.168.44.1/24";
-    private static final String P2P_HOST_IFACE_ADDRESS = "192.168.49.1/24";
-    private static final String ETHERNET_HOST_IFACE_ADDRESS = "192.168.45.1/24";
+    private static final String USB_HOST_IFACE_ADDRESS = "192.168.4.1/24";
+    private static final String BT_HOST_IFACE_ADDRESS = "192.168.4.1/24";
+    private static final String P2P_HOST_IFACE_ADDRESS = "192.168.4.1/24";
+    private static final String ETHERNET_HOST_IFACE_ADDRESS = "192.168.4.1/24";
 
     // staticBSSID Switch
     private static final boolean shouldStaticBSSID = false;
